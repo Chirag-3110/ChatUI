@@ -1,21 +1,12 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-
+import {  Text, View ,TextInput,SafeAreaView, Image,TouchableOpacity, StyleSheet} from 'react-native';
+import Animation from './src/screens/Animation';
+import LoginUI from './src/screens/LoginUI'
+import ChatUI from './src/screens/ChatUI';
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <>
+      <ChatUI/>
+    </>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
